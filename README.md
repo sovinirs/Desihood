@@ -2,6 +2,10 @@
 
 A modern web application designed to help members of the desi community find roommates and apartments that match their lifestyle and preferences. Built with Next.js 15, React 19, and Supabase.
 
+<p align="center">
+  <img src="public/screenshots/landing-page.png" alt="DesiHood Landing Page" width="70%" />
+</p>
+
 ## ✨ Features
 
 ### 🔍 **Smart Search & Filtering**
@@ -10,11 +14,19 @@ A modern web application designed to help members of the desi community find roo
 - Amenity-based search (WiFi, Kitchen, Washer, Dryer, etc.)
 - Location-based roommate matching
 
+<p align="center">
+  <img src="public/screenshots/search-filters.png" alt="Search Filters" width="70%" />
+</p>
+
 ### 👥 **User Management**
 
 - Secure authentication with Supabase
 - User profiles and preferences
 - Onboarding flow for new users
+
+<p align="center">
+  <img src="public/screenshots/onboarding.png" alt="User Onboarding" width="70%" />
+</p>
 
 ### 🏢 **Listing Management**
 
@@ -23,11 +35,17 @@ A modern web application designed to help members of the desi community find roo
 - Specify room configurations and amenities
 - Set pricing and availability
 
-### 💬 **Communication**
+<p align="center">
+  <img src="public/screenshots/create-listing.png" alt="Create Listing" width="70%" />
+</p>
 
-- Connect with potential roommates
-- Chat functionality for coordination
-- Profile verification system
+<p align="center">
+  <img src="public/screenshots/profile.png" alt="Create Listing" width="70%" />
+</p>
+
+<p align="center">
+  <img src="public/screenshots/settings.png" alt="Create Listing" width="70%" />
+</p>
 
 ### 📱 **Modern UI/UX**
 
