@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Neo-Brutalism Theme: DesiMatch Palette */
+  /* Primary: Turmeric Yellow */
+  --primary-hsl: 45 100% 51%; /* #FFC107 */
+  --primary-foreground-hsl: 0 0% 0%; /* Black text on yellow */
+
+  /* Secondary: Teal */
+  --secondary-hsl: 180 100% 25%; /* #008080 */
+  --secondary-foreground-hsl: 0 0% 100%; /* White text on teal */
+
+  /* Accent: Orange */
+  --accent-hsl: 30 100% 64%; /* #FFB347 */
+  --accent-foreground-hsl: 0 0% 0%; /* Black text on orange */
+
+  /* Destructive: Maroon */
+  --destructive-hsl: 0 100% 25%; /* #800000 */
+  --destructive-foreground-hsl: 0 0% 100%; /* White text on maroon */
+
+  /* Background/Foreground: Off-White/Black */
+  --background-hsl: 0 0% 98%; /* Off-white */
+  --foreground-hsl: 0 0% 3.9%; /* Black */
+
+  /* Cards & Popovers */
+  --card-hsl: 0 0% 100%; /* White */
+  --card-foreground-hsl: 0 0% 3.9%; /* Black */
+  --popover-hsl: 0 0% 100%; /* White */
+  --popover-foreground-hsl: 0 0% 3.9%; /* Black */
+
+  /* Muted */
+  --muted-hsl: 0 0% 90%; /* Light Gray */
+  --muted-foreground-hsl: 0 0% 45%; /* Dark Gray */
+
+  /* Borders & Inputs */
+  --border-hsl: 0 0% 15%; /* Darker border for brutalism */
+  --input-hsl: 0 0% 90%; /* Light Gray for input bg */
+  --ring-hsl: 45 100% 51%; /* Use primary for ring */
+
+  /* Charts (Keep default or adjust if needed) */
+  --chart-1: 12 76% 61%;
+  --chart-2: 173 58% 39%;
+  --chart-3: 197 37% 24%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
+
+  /* Radius (Set to 0 for sharp corners) */
+  --radius: 0rem;
+
+  /* Sidebar (Adjust if sidebar component is used) */
+  --sidebar-background-hsl: 0 0% 98%;
+  --sidebar-foreground-hsl: 0 0% 3.9%;
+  --sidebar-primary-hsl: 45 100% 51%;
+  --sidebar-primary-foreground-hsl: 0 0% 0%;
+  --sidebar-accent-hsl: 30 100% 64%;
+  --sidebar-accent-foreground-hsl: 0 0% 0%;
+  --sidebar-border-hsl: 0 0% 15%;
+  --sidebar-ring-hsl: 45 100% 51%;
+
+  /* Apply HSL variables */
+  --background: var(--background-hsl);
+  --foreground: var(--foreground-hsl);
+  --card: var(--card-hsl);
+  --card-foreground: var(--card-foreground-hsl);
+  --popover: var(--popover-hsl);
+  --popover-foreground: var(--popover-foreground-hsl);
+  --primary: var(--primary-hsl);
+  --primary-foreground: var(--primary-foreground-hsl);
+  --secondary: var(--secondary-hsl);
+  --secondary-foreground: var(--secondary-foreground-hsl);
+  --muted: var(--muted-hsl);
+  --muted-foreground: var(--muted-foreground-hsl);
+  --accent: var(--accent-hsl);
+  --accent-foreground: var(--accent-foreground-hsl);
+  --destructive: var(--destructive-hsl);
+  --destructive-foreground: var(--destructive-foreground-hsl);
+  --border: var(--border-hsl);
+  --input: var(--input-hsl);
+  --ring: var(--ring-hsl);
+  --sidebar-background: var(--sidebar-background-hsl);
+  --sidebar-foreground: var(--sidebar-foreground-hsl);
+  --sidebar-primary: var(--sidebar-primary-hsl);
+  --sidebar-primary-foreground: var(--sidebar-primary-foreground-hsl);
+  --sidebar-accent: var(--sidebar-accent-hsl);
+  --sidebar-accent-foreground: var(--sidebar-accent-foreground-hsl);
+  --sidebar-border: var(--sidebar-border-hsl);
+  --sidebar-ring: var(--sidebar-ring-hsl);
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+.neo-brutal-shadow {
+  box-shadow: 4px 4px 0px 0px hsl(var(--foreground-hsl));
+}
+
+.neo-brutal-shadow-hover:hover {
+  box-shadow: 6px 6px 0px 0px hsl(var(--foreground-hsl));
+  transform: translate(-2px, -2px);
+  transition: all 0.15s ease-out;
+}
+
+.neo-brutal-border {
+  border-width: 2px;
+}
+
+.ring-offset-background {
+  --tw-ring-offset-color: hsl(var(--background));
+}
+
+.focus\:neo-brutal-shadow:focus {
+  box-shadow: 0px 0px 0px 0px hsl(var(--foreground-hsl));
+}
+
+.focus\:translate-y-\[-2px\]:focus {
+  --tw-translate-y: -2px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
